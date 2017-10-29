@@ -24,6 +24,7 @@
 
 .reviewers__img{
 	filter: grayscale(100);
+    min-width: 100%;
 	min-height: 100%;
 	object-fit: cover;
 }
@@ -73,6 +74,7 @@
 
      &-link:hover{
      	background-color: darken(#2f3234,10%);
+        height: 100%;
      }
 }
 

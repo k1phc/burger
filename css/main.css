@@ -163,7 +163,8 @@ ul {
 
 .section-best {
   background: url(../img/we-best.png) center center no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  height: 100vh; }
   .section-best .content {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -224,11 +225,13 @@ ul {
 
 .section-team {
   background: url(../img/team.png);
-  background-size: cover; }
+  background-size: cover;
+  height: 100vh; }
 
 .section-menu {
   background: url(../img/menu.png);
-  background-size: cover; }
+  background-size: cover;
+  height: 100vh; }
 
 .section-review {
   background-color: #b9b9b9; }
@@ -254,6 +257,7 @@ ul {
 .reviewers__img {
   -webkit-filter: grayscale(100);
           filter: grayscale(100);
+  min-width: 100%;
   min-height: 100%;
   -o-object-fit: cover;
      object-fit: cover; }
@@ -295,7 +299,8 @@ ul {
     -webkit-transition: 0.4s;
     transition: 0.4s; }
   .reviwers__info-link:hover {
-    background-color: #171819; }
+    background-color: #171819;
+    height: 100%; }
 
 .reviewers__item:hover .reviwers__info {
   opacity: 1; }
