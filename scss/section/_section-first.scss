@@ -8,8 +8,12 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	width: 100%;
 }   
 
+.nav{
+	margin-left: auto;
+}
 .nav__list{
 	display: flex;
 	list-style: none;
@@ -45,6 +49,12 @@
 	align-items: center;
 	justify-content: center;
 	height: 650px;
+	position: relative;
+
+	  &__text{
+	  	margin-top: 90px;
+	  	margin-left: 100px;
+	  }
 
 	  &__text_one{
 	  	font-family: 'gagalinregular';
@@ -60,3 +70,7 @@
 	  }
 }
 
+.page-down{
+	position: absolute;
+	bottom: 50px;
+}

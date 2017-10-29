@@ -96,7 +96,17 @@ ul {
     height: 6px;
     background-color: #fff;
     border-radius: 50%;
-    margin-bottom: 15px; }
+    margin-bottom: 15px;
+    position: relative; }
+
+.switcher__link_active {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  border: 1px solid #fff;
+  border-radius: 50%; }
 
 .section-first {
   background: url("../img/bg.png") no-repeat;
@@ -112,7 +122,11 @@ ul {
           justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  width: 100%; }
+
+.nav {
+  margin-left: auto; }
 
 .nav__list {
   display: -webkit-box;
@@ -150,7 +164,11 @@ ul {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 650px; }
+  height: 650px;
+  position: relative; }
+  .main-content__text {
+    margin-top: 90px;
+    margin-left: 100px; }
   .main-content__text_one {
     font-family: 'gagalinregular';
     color: #f9b43b;
@@ -160,6 +178,10 @@ ul {
     font-family: 'lifehackmedium';
     color: #fff;
     font-size: 72px; }
+
+.page-down {
+  position: absolute;
+  bottom: 50px; }
 
 .section-best {
   background: url(../img/we-best.png) center center no-repeat;
