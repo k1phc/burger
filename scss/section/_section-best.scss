@@ -1,0 +1,53 @@
+.section-best{
+    background: url(../img/we-best.png) center center no-repeat;
+    background-size: cover;
+
+      .content{
+      	display: flex;
+      	flex-direction: column;
+      	align-items: center;
+
+      }
+}
+
+.title__best{
+	font-family: 'gagalinregular';
+	font-size: 72px;
+	align-items: center;
+	margin-top: 82px;
+	margin-bottom: 130px;
+}
+
+.best__descrips{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.best__descrip{
+	width: 32%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	  &-img{
+	  	margin-bottom: 35px;
+	  }
+
+	  &-title{
+	  	font-family: 'lifehackmedium';
+	  	font-size: 24px;
+	  	margin-bottom: 42px;
+	  	width: 80%;
+	  	text-align: center;
+
+	  }
+
+	  &-text{
+	  	font-family: 'ubuntulight';
+	  	font-size: 14px;
+	  	line-height: 24px;
+	  	text-align: center;
+	  }
+
+}

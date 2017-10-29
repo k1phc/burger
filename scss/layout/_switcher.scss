@@ -1,0 +1,22 @@
+.switcher{
+	position: fixed;
+	top: 95px;
+	right: 55px;
+
+	    &__list{
+	    	list-style: none;
+	    }
+
+	    &__item{
+	    	 width: 6px;
+             height: 6px;
+             background-color: #fff;
+             border-radius: 50%;
+             margin-bottom: 15px;
+	    }
+
+	    &__link{
+	    	
+	    }
+
+}

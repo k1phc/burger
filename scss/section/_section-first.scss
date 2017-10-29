@@ -1,0 +1,62 @@
+.section-first{
+	background: url("../img/bg.png") no-repeat;
+	background-size: cover;
+	height: 100vh;	
+}
+
+.header{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}   
+
+.nav__list{
+	display: flex;
+	list-style: none;
+}
+
+ .nav__item{
+	    	position: relative;
+
+	    	&:nth-of-type(-n+5):after{
+	   	content: "";
+	   	position: absolute;
+	    right: 15px;
+	    bottom: 6px;
+	   	width: 4px;
+	   	height: 4px;
+	   	border-radius: 50%;
+	   	background-color: #fff;
+	   }
+}
+
+
+.nav__link{
+	font-size: 13px;
+	font-family: 'ubuntumedium', Arial, sans-serif;
+	text-decoration: none;
+	padding-right: 38px;
+	color: #fff;
+	text-transform: uppercase;         
+}
+
+.main-content{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 650px;
+
+	  &__text_one{
+	  	font-family: 'gagalinregular';
+	  	color: $yellow;
+	  	font-size: 72px;
+	  	text-align: center;
+	  }
+
+	  &__text_two{
+	  	font-family: 'lifehackmedium';
+	  	color: #fff;
+	  	font-size: 72px;
+	  }
+}
+
