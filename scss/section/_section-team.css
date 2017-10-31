@@ -1,0 +1,14 @@
+.section-team {
+  background: url(../img/team.png);
+  background-size: cover;
+  height: 100vh;
+  position: relative; }
+
+.team {
+  position: absolute;
+  top: 0;
+  right: 0;
+  min-width: 50%;
+  min-height: 100%;
+  background-color: #2d2f31;
+  opacity: 0.8; }
