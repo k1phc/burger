@@ -1,21 +1,25 @@
 .btn__order{
-	
-	  &-link{
-	  	width: 98px;
+		width: 98px;
 	    height: 35px;
 	    background-color: $orange;
 	    border-radius: 5px;
+	    border: none;
 	    text-align: center;
-	    padding: 10px 18px;
+	    padding: 10px 15px;
 	  	text-decoration: none;
 	  	color: #fff;
 	  	font-family: 'ubuntumedium';
 	  	font-size: 13px;
 	  	text-transform: uppercase;
 	  	transition: 0.4s;
+	  	display: inline-block;
+	
+	 
+	  
 	  	    
 	  	     &:hover{
-	  	background-color: darken($orange,10%);
+	  	       background-color: darken($orange,10%);
+	  	       cursor: pointer;
 	  }
-	}
+	
 }

@@ -34,6 +34,10 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
 
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: normal; }
+
 ul {
   list-style: none; }
 
@@ -68,22 +72,25 @@ ul {
       -ms-flex-align: center;
           align-items: center; }
 
-.btn__order-link {
+.btn__order {
   width: 98px;
   height: 35px;
   background-color: #e45028;
   border-radius: 5px;
+  border: none;
   text-align: center;
-  padding: 10px 18px;
+  padding: 10px 15px;
   text-decoration: none;
   color: #fff;
   font-family: 'ubuntumedium';
   font-size: 13px;
   text-transform: uppercase;
   -webkit-transition: 0.4s;
-  transition: 0.4s; }
-  .btn__order-link:hover {
-    background-color: #c13c18; }
+  transition: 0.4s;
+  display: inline-block; }
+  .btn__order:hover {
+    background-color: #c13c18;
+    cursor: pointer; }
 
 .switcher {
   position: fixed;
@@ -166,9 +173,19 @@ ul {
           justify-content: center;
   height: 650px;
   position: relative; }
+  .main-content__img {
+    background: url(../img/drops.png) center center no-repeat;
+    background-size: cover;
+    width: 560px;
+    height: 460px;
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    margin-right: 20px; }
   .main-content__text {
     margin-top: 90px;
-    margin-left: 100px; }
+    margin-left: 100px;
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%; }
   .main-content__text_one, .team__title, .menu__title {
     font-family: 'gagalinregular';
     color: #f9b43b;
@@ -180,8 +197,12 @@ ul {
     font-size: 72px; }
 
 .page-down {
+  background: url(../icons/arrow-scroll.svg) center center no-repeat;
+  width: 52px;
+  height: 52px;
   position: absolute;
-  bottom: 50px; }
+  bottom: 50px;
+  border: none; }
 
 .section-best {
   background: url(../img/we-best.png) center center no-repeat;
@@ -230,13 +251,25 @@ ul {
           flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
-  .best__descrip-img {
-    margin-bottom: 35px; }
+          align-items: center;
+  position: relative; }
+  .best__descrip:before {
+    margin-bottom: 35px;
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    display: block; }
+  .best__descrip_meat:before {
+    content: url(../icons/meat.svg); }
+  .best__descrip_hand:before {
+    content: url(../icons/hand.svg); }
+  .best__descrip_natural:before {
+    content: url(../icons/natural.svg); }
   .best__descrip-title {
     font-family: 'lifehackmedium';
     font-size: 24px;
     margin-bottom: 42px;
+    margin-top: 80px;
     width: 80%;
     text-align: center; }
   .best__descrip-text {
@@ -321,7 +354,9 @@ ul {
 
 .mmbr__img {
   border-radius: 50%;
-  overflow: hidden; }
+  width: 104px;
+  -o-object-fit: cover;
+     object-fit: cover; }
 
 .mmbr__text {
   width: 260px;
@@ -358,9 +393,20 @@ ul {
           justify-content: flex-end; }
 
 .menu__item {
-  width: 80px;
-  -webkit-transform: rotateX(90deg);
-          transform: rotateX(90deg); }
+  width: 84px;
+  overflow: hidden; }
+  .menu__item_meat {
+    background: url(../img/menu/meat.jpg) center center no-repeat;
+    background-size: cover; }
+  .menu__item_veg {
+    background: url(../img/menu/veg.jpg) center center no-repeat;
+    background-size: cover; }
+  .menu__item_diet {
+    background: url(../img/menu/diet.jpg) center center no-repeat;
+    background-size: cover; }
+  .menu__item-text {
+    width: 543px;
+    background-color: rgba(49, 49, 49, 0.90323); }
 
 .section-review {
   background-color: #b9b9b9; }
@@ -379,7 +425,6 @@ ul {
 .reviewers__item {
   width: 25%;
   height: 50vh;
-  min-height: 326px;
   overflow: hidden;
   position: relative;
   -webkit-transition: 0.6s;
@@ -454,11 +499,25 @@ ul {
   height: 60px;
   background: url(../img/footer.jpg); }
   .footer__item {
+    width: 945px;
+    height: 100%;
+    margin: 0 auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
 
 .contact {
-  color: #fff; }
+  width: 50%; }
+  .contact__text {
+    color: #fff;
+    line-height: 24px;
+    padding-top: 8px; }
+  .contact__number {
+    text-align: left;
+    color: #e45028;
+    font-weight: 700; }
+
+.socials {
+  width: 50%; }
 
 /*# sourceMappingURL=main.css.map */

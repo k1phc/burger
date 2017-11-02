@@ -51,9 +51,20 @@
 	height: 650px;
 	position: relative;
 
+
+	  &__img{
+	  	background: url(../img/drops.png) center center no-repeat;
+	  	background-size: cover;
+	  	width: 560px;
+	  	height: 460px;
+	  	flex-basis: 50%;
+	  	margin-right: 20px;
+	  }
+
 	  &__text{
 	  	margin-top: 90px;
 	  	margin-left: 100px;
+	  	flex-basis: 50%;
 	  }
 
 	  &__text_one{
@@ -71,6 +82,10 @@
 }
 
 .page-down{
+	background: url(../icons/arrow-scroll.svg) center center no-repeat;
+	width: 52px;
+	height: 52px;
 	position: absolute;
 	bottom: 50px;
+	border: none;
 }

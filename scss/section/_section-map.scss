@@ -13,11 +13,32 @@
 	background: url(../img/footer.jpg);
 
 	   &__item{
+	   	width: 945px;
+	   	height: 100%;
+	   	margin: 0 auto;
 	   	display: flex;
 	   }
 }
 
 .contact{
-	color: #fff;
+	width: 50%;
+	
 
+	  &__text{
+           color: #fff;
+           line-height: 24px;
+           padding-top: 8px;
+	  }
+
+	  &__number{
+         text-align: left;
+         color: #e45028;
+         font-weight: 700;
+	  	
+	  }
+	
+}
+
+.socials{
+	width: 50%;
 }

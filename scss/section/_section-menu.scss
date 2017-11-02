@@ -24,8 +24,28 @@
 }
 
 .menu__item{
-	width: 80px;
-	transform: rotateX(90deg);
+	width: 84px;
+	overflow: hidden;
+	
+	
+	&_meat{
+		background: url(../img/menu/meat.jpg) center center no-repeat;
+		background-size: cover;
+	}
 
+	&_veg{
+		background: url(../img/menu/veg.jpg) center center no-repeat;
+		background-size: cover;
+	}
+
+	&_diet{
+		background: url(../img/menu/diet.jpg) center center no-repeat;
+		background-size: cover;
+	}
+
+	&-text{
+		width: 543px;
+		background-color: rgba(49, 49, 49, 0.903226);
+	}
 
 }
