@@ -1,15 +1,15 @@
 .btn__order{
-		width: 98px;
-	    height: 35px;
+		width: rem(98px);
+	    height: rem(35px);
 	    background-color: $orange;
-	    border-radius: 5px;
+	    border-radius: rem(5px);
 	    border: none;
 	    text-align: center;
-	    padding: 10px 15px;
+	    padding: rem(10px) rem(15px);
 	  	text-decoration: none;
 	  	color: #fff;
 	  	font-family: 'ubuntumedium';
-	  	font-size: 13px;
+	  	font-size: rem(13px);
 	  	text-transform: uppercase;
 	  	transition: 0.4s;
 	  	display: inline-block;

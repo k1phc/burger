@@ -13,10 +13,10 @@
 
 .title__best{
 	font-family: 'gagalinregular';
-	font-size: 72px;
+	font-size: rem(72px);
 	align-items: center;
-	margin-top: 82px;
-	margin-bottom: 130px;
+	margin-top: rem(82px);
+	margin-bottom: rem(130px);
 }
 
 .best__descrips{
@@ -33,9 +33,9 @@
 	position: relative;
 
 	  &:before{
-	  	margin-bottom: 35px;
+	  	margin-bottom: rem(35px);
 	  	position: absolute;
-	  	  	top: -50px;
+	  	  	top: rem(-50px);
             left: 50%;
 	  	  	display: block;
 	  	  }
@@ -57,9 +57,9 @@
 
 	  &-title{
 	  	font-family: 'lifehackmedium';
-	  	font-size: 24px;
-	  	margin-bottom: 42px;
-	  	margin-top: 80px;
+	  	font-size: rem(24px);
+	  	margin-bottom: rem(42px);
+	  	margin-top: rem(80px);
 	  	width: 80%;
 	  	text-align: center;
 
@@ -67,8 +67,8 @@
 
 	  &-text{
 	  	font-family: 'ubuntulight';
-	  	font-size: 14px;
-	  	line-height: 24px;
+	  	font-size: rem(14px);
+	  	line-height: rem(24px);
 	  	text-align: center;
 	  }
 

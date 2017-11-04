@@ -8,15 +8,18 @@
 .menu__title{
 	@extend .main-content__text_one;
 	color: #fff;
+	position: absolute;
+	top: rem(116px);
+	left: rem(96px);
+
 }
 
 .menu__accordeon{
 	position: absolute;
 	top: 0;
 	right: 0;
-	width: 70%;
+	width: 60%;
 	height: 100%;
-	background-color: rgba(27, 27, 27, 0.61);
 	display: flex;
 	justify-content: flex-end;
 	
@@ -24,28 +27,64 @@
 }
 
 .menu__item{
-	width: 84px;
-	overflow: hidden;
-	
-	
-	&_meat{
-		background: url(../img/menu/meat.jpg) center center no-repeat;
-		background-size: cover;
+	width: rem(621px);
+	display: flex;
+
+	&_active .menu-title{
+        color: $yellow;
 	}
 
-	&_veg{
-		background: url(../img/menu/veg.jpg) center center no-repeat;
-		background-size: cover;
+	&_active .menu__item-text{
+                 width: rem(541px);
+		     	overflow: visible;
+		     	padding: rem(64px) rem(36px);
 	}
 
-	&_diet{
-		background: url(../img/menu/diet.jpg) center center no-repeat;
-		background-size: cover;
-	}
 
-	&-text{
-		width: 543px;
-		background-color: rgba(49, 49, 49, 0.903226);
-	}
+         &-title{
+	         height: 100%;
+	         width: rem(84px);
+	         position: relative;
+	         
+	     &_meat{
 
+		     background: url(../img/menu/meat.jpg) center center no-repeat;
+		     background-size: cover;
+
+
+	     }
+
+	     &_veg{
+		     background: url(../img/menu/veg.jpg) center center no-repeat;
+		     background-size: cover;
+	     }
+
+	     &_diet{
+		     background: url(../img/menu/diet.jpg) center center no-repeat;
+		     background-size: cover;
+	     }
+	     }
+
+	     &-text{
+		     width: 0;
+		     overflow: hidden;
+		     background-color: rgba(49, 49, 49, 0.903226);
+		     font-family: 'ubuntulight';
+		     font-size: 14px;
+		     color: #fff;
+		     text-align: left;
+		     line-height: rem(28px);
+
+	     }
+}
+
+.menu-title{
+	@extend .main-content__text_one;
+	color: #fff;
+	font-size: rem(40px);
+	position: absolute;
+	transform: rotate(-90deg);
+	top: 50%;
+	left: rem(-85px);
+	width: rem(268px);
 }

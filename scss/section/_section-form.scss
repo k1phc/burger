@@ -3,3 +3,23 @@
 	background-size: cover;
 	height: 100vh;
 }
+
+.form{
+	&__content{
+	   display: flex;
+}
+
+     &__col{
+	    flex: 1;
+}
+
+    &__row{
+    	display: flex;
+    	width: 100%;
+    }
+
+   
+
+
+}
+

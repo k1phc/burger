@@ -2,3 +2,9 @@
   background: url(../img/form.jpg) no-repeat;
   background-size: cover;
   height: 100vh; }
+
+.form__content {
+  display: flex; }
+
+.form__col {
+  flex: 1; }
