@@ -1,0 +1,16 @@
+.btn__clear{
+	width: rem(98px);
+    height: rem(35px);
+	border: none;
+	background: transparent;
+	color: #fff;
+	font-family: 'ubuntulight';
+	font-size: rem(14px);
+	transition: 0.4s;
+
+
+	    &:hover{
+	    	color: $orange;
+	  	    cursor: pointer;
+	    }
+}

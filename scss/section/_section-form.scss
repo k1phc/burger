@@ -3,23 +3,115 @@
 	background-size: cover;
 	height: 100vh;
 }
-
+.section__title{
+	@extend .main-content__text_one;
+	margin-top: rem(94px);
+	margin-bottom: rem(80px);
+}
 .form{
-	&__content{
-	   display: flex;
-}
 
-     &__col{
-	    flex: 1;
-}
+	&__content{
+		display: flex;
+		align-items: baseline;
+	}
+	
+	&__col{
+		width: 50%;
+	}
 
     &__row{
-    	display: flex;
-    	width: 100%;
+        display: flex;
+        margin-bottom: rem(42px);
     }
 
-   
+    &__label{
+    	flex: 1;
+    	margin-right: 20px;
 
+    	&:last-child{
+    		margin-right: 0;
+    	}
+
+    	&_radio{
+    		position: relative;
+            display: flex;  
+    	}
+
+    	&_checkbox{
+    		position: relative;
+    		display: flex;
+    	}
+    }
+
+    &__title{
+    	color: #fff;
+    	margin-bottom: rem(6px);
+    }
+
+    &__input{
+    	width: 100%;
+    	border: none;
+    	border-radius: rem(5px);
+    	padding: rem(6px);
+    }
+
+    &__area{
+    	width: rem(462px);
+    	height: rem(112px);
+    	border: none;
+    	border-radius: rem(5px);
+    }
+
+
+    &__radio{
+    	 position: absolute;
+         left: rem(-99999px);
+         top: 0;
+
+
+         &:checked + .form__radio_circle:after{
+         	width: rem(8px);
+         	height: rem(8px);
+         	background-color: $orange;
+         }
+
+         	
+
+         &_circle{
+         	position: relative;
+         	display: inline-block;
+         	width: rem(18px);
+         	height: rem(18px);
+         	background-color: #fff;
+         	border-radius: 50%;
+         	margin-right: rem(10px);
+
+         	&:after{
+         		content: "";
+         		position: absolute;
+         		top: 50%;
+         		left: 50%;
+         		border-radius: 50%;
+         		width: 0;
+         		height: 0;
+         		transform: translate(-50%,-50%);
+         	}
+         }
+    }
+
+
+    &__check{
+    	position: absolute;
+         left: rem(-99999px);
+         top: 0;
+
+         &_square{
+         	display: inline-block;
+         	width: rem(16px);
+         	height: rem(16px);
+         	background-color: #ffF
+         }
+    }
 
 }
 
