@@ -1,7 +1,7 @@
 .section-form{
-	background: url(../img/form.jpg) no-repeat;
+	background: url(../img/form.jpg) center center no-repeat;
 	background-size: cover;
-	height: 100vh;
+	
 }
 .section__title{
 	@extend .main-content__text_one;
@@ -13,10 +13,16 @@
 	&__content{
 		display: flex;
 		align-items: baseline;
+
+          @include tablets{
+            flex-direction: column;
+        }
 	}
 	
 	&__col{
 		width: 50%;
+
+
 	}
 
     &__row{

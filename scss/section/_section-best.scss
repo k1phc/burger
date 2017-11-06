@@ -1,7 +1,7 @@
 .section-best{
     background: url(../img/we-best.png) center center no-repeat;
     background-size: cover;
-    height: 100vh;	
+
 
       .content{
       	display: flex;
@@ -19,18 +19,28 @@
 	margin-bottom: rem(130px);
 }
 
-.best__descrips{
+.best__list{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+
+	 @include mobile{
+	 	flex-direction: column;
+	 }
 }
 
 .best__descrip{
-	width: 32%;
+	width: 33%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	position: relative;
+
+	  @include mobile{
+	  	flex-direction: row;
+	  	width: 100%;
+	  }
+
 
 	  &:before{
 	  	margin-bottom: rem(35px);
@@ -62,6 +72,8 @@
 	  	margin-top: rem(80px);
 	  	width: 80%;
 	  	text-align: center;
+
+	  	
 
 	  }
 

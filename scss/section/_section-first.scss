@@ -1,7 +1,7 @@
 .section-first{
-	background: url("../img/bg.png") no-repeat;
+	background: url("../img/bg.png") center center no-repeat;
 	background-size: cover;
-	height: 100vh;	
+
 }
 
 .header{
@@ -13,6 +13,10 @@
 
 .nav{
 	margin-left: auto;
+
+	@include tablets{
+		display: none;
+	}
 }
 .nav__list{
 	display: flex;
@@ -51,20 +55,32 @@
 	height: rem(650px);
 	position: relative;
 
+	    @include tablets{
+	    	flex-direction: column;
+	    }
+
 
 	  &__img{
-	  	background: url(../img/drops.png) center center no-repeat;
-	  	background-size: cover;
-	  	width: rem(560px);
-	  	height: rem(460px);
 	  	flex-basis: 50%;
 	  	margin-right: rem(20px);
+
+	  	  @include tablets{
+	  	  	flex-basis: 100%;
+
+	  	  }
 	  }
 
 	  &__text{
 	  	margin-top: rem(90px);
 	  	margin-left: rem(100px);
 	  	flex-basis: 50%;
+
+
+	  	 @include tablets{
+	  	 	flex-basis: 100%;
+	  	 	text-align: center;
+	  	 	margin: 0;
+	  	 }
 	  }
 
 	  &__text_one{
@@ -78,6 +94,10 @@
 	  	font-family: 'lifehackmedium';
 	  	color: #fff;
 	  	font-size: rem(72px);
+
+	  	 @include tablets{
+	  	 	font-size: rem(92px);
+	  	 }
 	  }
 }
 
