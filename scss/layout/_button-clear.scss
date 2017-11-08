@@ -13,4 +13,9 @@
 	    	color: $orange;
 	  	    cursor: pointer;
 	    }
+
+	    @include mobile{
+	    	font-size: rem(18px);
+	    	margin-left: rem(15px);
+	    }
 }

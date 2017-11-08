@@ -1,8 +1,8 @@
 .section-form{
 	background: url(../img/form.jpg) center center no-repeat;
-	background-size: cover;
-	
+	background-size: cover;	
 }
+
 .section__title{
 	@extend .main-content__text_one;
 	margin-top: rem(94px);
@@ -13,21 +13,33 @@
 	&__content{
 		display: flex;
 		align-items: baseline;
+        justify-content: space-between;
 
           @include tablets{
             flex-direction: column;
+            align-items: center;
         }
 	}
 	
 	&__col{
-		width: 50%;
+		width: 48%;
 
+         @include tablets{
+            width: 65%;
+          }
 
+          @include mobile{
+            width: 95%;
+          }
 	}
 
     &__row{
         display: flex;
-        margin-bottom: rem(42px);
+        margin-bottom: rem(16px);
+
+        @include mobile{
+            justify-content: center;
+        }
     }
 
     &__label{
@@ -52,6 +64,10 @@
     &__title{
     	color: #fff;
     	margin-bottom: rem(6px);
+
+        @include mobile{
+            font-size: rem(20px);
+        }
     }
 
     &__input{
@@ -62,7 +78,7 @@
     }
 
     &__area{
-    	width: rem(462px);
+    	width: 100%;
     	height: rem(112px);
     	border: none;
     	border-radius: rem(5px);
@@ -115,9 +131,35 @@
          	display: inline-block;
          	width: rem(16px);
          	height: rem(16px);
-         	background-color: #ffF
+         	background-color: #ffF;
+            position: relative;
+            margin-right: rem(10px);
          }
+
+        &:checked + .form__check_square:after{
+            content: "";
+            position: absolute;
+            width: rem(11px);
+            height: rem(9px);
+            background: url(../icons/checkmark.png);
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%); 
+        }
     }
 
 }
 
+.payment__row{
+    @include mobile{
+        margin: rem(40px) rem(50px) rem(30px); 
+    }
+}
+
+.disturb{
+    @include mobile{
+        width: 50%;
+        margin: 0 auto;
+        margin-bottom: rem(30px);
+    }
+}

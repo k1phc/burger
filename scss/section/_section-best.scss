@@ -37,8 +37,9 @@
 	position: relative;
 
 	  @include mobile{
-	  	flex-direction: row;
 	  	width: 100%;
+	  	margin-left: rem(160px);
+	  	margin-bottom: rem(70px);
 	  }
 
 
@@ -48,6 +49,11 @@
 	  	  	top: rem(-50px);
             left: 50%;
 	  	  	display: block;
+
+	  	  	@include mobile{
+	  	  		left: rem(-70px);
+	  	  		top: auto;
+	  	  	}
 	  	  }
 
 	  	 &_meat:before{
@@ -73,8 +79,11 @@
 	  	width: 80%;
 	  	text-align: center;
 
-	  	
-
+	  	@include mobile{
+	  		margin-top: rem(30px);
+	  		margin-bottom: rem(30px);
+	  		text-align: left;
+	  	}
 	  }
 
 	  &-text{
@@ -82,6 +91,12 @@
 	  	font-size: rem(14px);
 	  	line-height: rem(24px);
 	  	text-align: center;
+
+	  	@include mobile{
+	  		width: 80%;
+	  		text-align: left;
+	  		font-size: rem(16px);
+	  	}
 	  }
 
 }

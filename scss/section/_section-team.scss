@@ -28,7 +28,14 @@
 	  &__title{
 	  	@extend .main-content__text_one;
 	  	margin-bottom: rem(20px);
+
+	  	@include mobile{
+	  	margin-top: rem(110px);
+	  	margin-bottom: rem(100px);
 	  }
+	  }
+
+
 }
 
 .mmbr__item{
@@ -114,6 +121,10 @@
 	 	width: 80%;
         margin: 0 auto;
 	 }
+
+	 @include mobile{
+	 	font-size: rem(22px);
+	 }
 }
 
 .mmbr__job{
@@ -123,7 +134,5 @@
 
 .mmbr__desc-text{
 	line-height: rem(22px);
-
-
 }
 

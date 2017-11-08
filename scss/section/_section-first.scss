@@ -9,6 +9,12 @@
 	justify-content: space-between;
 	align-items: center;
 	width: 100%;
+          &__logo{
+          	 @include tablets{
+	  	     width: 100%;
+	  }
+          }
+	 
 }   
 
 .nav{
@@ -59,6 +65,10 @@
 	    	flex-direction: column;
 	    }
 
+	     @include mobile{
+	  	 	margin-top: rem(110px);	
+	  	 }
+
 
 	  &__img{
 	  	flex-basis: 50%;
@@ -66,8 +76,19 @@
 
 	  	  @include tablets{
 	  	  	flex-basis: 100%;
-
 	  	  }
+
+	  	  @include mobile{
+	  	  	text-align: center;
+	  	  	margin-bottom: rem(40px);
+	  	  }
+
+	  	  &_full{ 
+	  	  	@include mobile{
+	  	  	width: 70%;
+	  	  }
+	  	}
+	  	 
 	  }
 
 	  &__text{
@@ -81,6 +102,8 @@
 	  	 	text-align: center;
 	  	 	margin: 0;
 	  	 }
+
+
 	  }
 
 	  &__text_one{
@@ -98,6 +121,10 @@
 	  	 @include tablets{
 	  	 	font-size: rem(92px);
 	  	 }
+
+	  	 @include mobile{
+	  	 	font-size: rem(72px);
+	  	 }
 	  }
 }
 
@@ -106,6 +133,10 @@
 	width: rem(52px);
 	height: rem(52px);
 	position: absolute;
-	bottom: rem(50px);
+	bottom: rem(-70px);
 	border: none;
+
+	 @include mobile{
+	 	bottom: rem(-120px);
+	 }
 }

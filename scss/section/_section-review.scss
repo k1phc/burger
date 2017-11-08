@@ -22,6 +22,7 @@
 
      @include tablets{
         width: 50%;
+        height: 25vh;
      }
 
 }
@@ -52,6 +53,15 @@
      	font-size: rem(14px);
      	text-transform: uppercase;
      	margin-bottom: rem(32px);
+
+        @include tablets{
+            text-align: center;
+            margin-bottom: rem(20px);
+        }
+
+        @include mobile{
+            font-size: rem(32px);
+        }
      }
 
      &-text{
@@ -60,6 +70,16 @@
      	line-height: rem(28px);
      	margin-top: rem(30px);
      	margin-bottom: rem(30px);
+
+        @include tablets{
+            margin-top: rem(15px);
+            margin-bottom: rem(15px);
+            text-align: center;
+        }
+
+        @include mobile{
+            display: none;
+        }
      }
 
      &-link{
@@ -75,6 +95,15 @@
      	padding: rem(10px) rem(12px) rem(10px);
      	text-align: center;
      	transition: 0.4s;
+
+        @include tablets {
+          margin-left: rem(130px);
+        }
+
+        @include mobile{
+            margin-left: rem(45px);
+
+        }
      }
 
      &-link:hover{

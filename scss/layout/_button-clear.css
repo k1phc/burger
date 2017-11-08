@@ -8,5 +8,5 @@
   font-size: rem(14px);
   transition: 0.4s; }
   .btn__clear:hover {
-    color: #222222;
+    color: gray;
     cursor: pointer; }

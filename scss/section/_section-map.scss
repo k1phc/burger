@@ -1,5 +1,5 @@
 .section-map{
-	background: url("../img/map.jpg") no-repeat;
+	background: url("../img/map.jpg") center center no-repeat;
 	background-size: cover;
 	height: 100vh;
 	position: relative;
@@ -12,16 +12,32 @@
 	height: rem(60px);
 	background: url(../img/footer.jpg);
 
+	   @include mobile{
+	   	min-height: rem(130px);
+	   }
+
 	   &__item{
-	   	width: rem(945px);
 	   	height: 100%;
 	   	margin: 0 auto;
 	   	display: flex;
+	   	justify-content: space-around;
+
+	   	  @include mobile{
+	   	  	flex-direction: column;
+	   	  }
 	   }
 }
 
 .contact{
 	width: 50%;
+	padding-left: rem(30px);
+
+	  @include mobile{
+	  	text-align: center;
+	  	font-size: rem(18px);
+	  	width: 80%;
+	  	margin-top: rem(15px);
+	  }
 	
 
 	  &__text{
@@ -34,6 +50,16 @@
          text-align: left;
          color: #e45028;
          font-weight: 700;
+
+           @include mobile{
+           	margin-top: rem(10px);
+           	text-align: center;
+           }
+
+          &-svg{
+          	width: rem(14px);
+          	height: rem(14px);
+          }
 
          &-link{
          text-align: left;
@@ -50,25 +76,36 @@
 	width: 50%;
 	height: 100%;
 
+	
+		@include mobile{
+			width: 80%;
+		}
+
 	&__list{
 		display: flex;
+		justify-content: center;
+		margin-top: rem(20px);
+
 	}
 
 	&__item{
-		margin-left: rem(20px);
+		margin-left: rem(40px);
 	}
 
 	&__link{
 		display: inline-block;
 		width: rem(20px);
 		height: rem(20px);
+
+		&:hover .socials__svg{
+			fill: #fff
+		}
 	}
 
 	&__svg{
-		    fill: rgba(255, 255, 255, 0.4);
-    width: 1.25rem;
-    height: 1.25rem;
-   
-    transition: 0.3s;
+		fill: rgba(255, 255, 255, 0.4);
+        width: 1.25rem;
+        height: 1.25rem;
+        transition: 0.3s;
 	}
 }
