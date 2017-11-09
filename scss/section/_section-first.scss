@@ -80,7 +80,7 @@
 
 	  	  @include mobile{
 	  	  	text-align: center;
-	  	     margin-bottom: rem(40px);
+	  	     margin-bottom: rem(20px);
 	  	  	flex-basis: initial;
 	  	  }
 
@@ -103,6 +103,10 @@
 	  	 	text-align: center;
 	  	 	margin-top: rem(50px);
 	  	 	margin-left: 0;
+	  	 }
+
+	  	 @include mobile{
+	  	 	margin-top: 0;
 	  	 }
 
 	  }
