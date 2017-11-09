@@ -1,7 +1,6 @@
 .section-menu{
 	background: url(../img/menu.png) center center no-repeat;
 	background-size: cover;
-	
 	position: relative;
 }
 
@@ -11,6 +10,13 @@
 	position: absolute;
 	top: rem(116px);
 	left: rem(96px);
+
+	 @include mobile{
+	 	font-size: rem(44px);
+	 	top: rem(60px);
+	 	left: rem(20px);
+	 }
+
 
 }
 
@@ -27,17 +33,23 @@
 }
 
 .menu__item{
-	// width: rem(621px);
 	display: flex;
+	cursor: pointer;
 
 	&_active .menu-title{
         color: $yellow;
 	}
 
 	&_active .menu__item-text{
-                 width: rem(541px);
+                width: rem(541px);
 		     	overflow: visible;
 		     	padding: rem(64px) rem(36px);
+
+		     	@include mobile{
+		     		width: rem(200px);
+		     		padding: rem(10px) rem(10px);
+		     	}
+
 	}
 
 

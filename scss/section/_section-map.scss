@@ -12,6 +12,10 @@
 	height: rem(60px);
 	background: url(../img/footer.jpg);
 
+	   @include tablets{
+	   	min-height: rem(80px);
+	   }
+
 	   @include mobile{
 	   	min-height: rem(130px);
 	   }
@@ -32,10 +36,14 @@
 	width: 50%;
 	padding-left: rem(30px);
 
+	  @include tablets{
+	  	font-size: rem(20px);
+	  }
+
 	  @include mobile{
 	  	text-align: center;
 	  	font-size: rem(18px);
-	  	width: 80%;
+	  	width: 95%;
 	  	margin-top: rem(15px);
 	  }
 	
@@ -50,6 +58,10 @@
          text-align: left;
          color: #e45028;
          font-weight: 700;
+
+           @include tablets{
+           	margin-top: rem(10px);
+           }
 
            @include mobile{
            	margin-top: rem(10px);

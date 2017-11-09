@@ -14,12 +14,17 @@
 	  	transition: 0.4s;
 	  	display: inline-block;
 	
-	 
-	  
 	  	    
 	  	     &:hover{
 	  	       background-color: darken($orange,10%);
 	  	       cursor: pointer;
 	  }
+
+
+	  // @include tablets{
+	  // 	font-size: rem(18px);
+	  // 	padding: rem(25px) rem(30px);
+	  // }
+
 	
 }

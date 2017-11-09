@@ -66,7 +66,7 @@
 	    }
 
 	     @include mobile{
-	  	 	margin-top: rem(110px);	
+	  	 	margin-top: rem(0px);	
 	  	 }
 
 
@@ -80,7 +80,8 @@
 
 	  	  @include mobile{
 	  	  	text-align: center;
-	  	  	margin-bottom: rem(40px);
+	  	     margin-bottom: rem(40px);
+	  	  	flex-basis: initial;
 	  	  }
 
 	  	  &_full{ 
@@ -100,9 +101,9 @@
 	  	 @include tablets{
 	  	 	flex-basis: 100%;
 	  	 	text-align: center;
-	  	 	margin: 0;
+	  	 	margin-top: rem(50px);
+	  	 	margin-left: 0;
 	  	 }
-
 
 	  }
 
@@ -111,6 +112,10 @@
 	  	color: $yellow;
 	  	font-size: rem(72px);
 	  	text-align: center;
+
+	  	 @include mobile{
+	  	 	font-size: rem(60px);
+	  	 }
 	  }
 
 	  &__text_two{
@@ -119,11 +124,12 @@
 	  	font-size: rem(72px);
 
 	  	 @include tablets{
-	  	 	font-size: rem(92px);
+	  	 	font-size: rem(65px);
+	  	 	padding: 0 rem(70px);
 	  	 }
 
 	  	 @include mobile{
-	  	 	font-size: rem(72px);
+	  	 	font-size: rem(50px);
 	  	 }
 	  }
 }
@@ -135,8 +141,14 @@
 	position: absolute;
 	bottom: rem(-70px);
 	border: none;
+	cursor: pointer;
+
+
+	 @include tablets{
+	 	bottom: rem(-280px);
+	 }
 
 	 @include mobile{
-	 	bottom: rem(-120px);
+	 	bottom: rem(80px);
 	 }
 }

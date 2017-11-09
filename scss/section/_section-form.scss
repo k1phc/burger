@@ -7,6 +7,11 @@
 	@extend .main-content__text_one;
 	margin-top: rem(94px);
 	margin-bottom: rem(80px);
+
+     @include mobile{
+        margin-top: rem(30px);
+        margin-bottom: rem(30px);
+     }
 }
 .form{
 
@@ -25,7 +30,7 @@
 		width: 48%;
 
          @include tablets{
-            width: 65%;
+            width: 80%;
           }
 
           @include mobile{
@@ -65,8 +70,12 @@
     	color: #fff;
     	margin-bottom: rem(6px);
 
+        @include tablets{
+            font-size: rem(22px);
+        }
+
         @include mobile{
-            font-size: rem(20px);
+            font-size: rem(17px);
         }
     }
 
@@ -79,7 +88,7 @@
 
     &__area{
     	width: 100%;
-    	height: rem(112px);
+    	height: rem(100px);
     	border: none;
     	border-radius: rem(5px);
     }
@@ -151,8 +160,14 @@
 }
 
 .payment__row{
+
+    @include tablets{
+        margin-top: rem(30px);
+        margin-bottom: rem(30px);
+    }
+
     @include mobile{
-        margin: rem(40px) rem(50px) rem(30px); 
+        margin: rem(10px) rem(2px) rem(10px); 
     }
 }
 
@@ -160,6 +175,6 @@
     @include mobile{
         width: 50%;
         margin: 0 auto;
-        margin-bottom: rem(30px);
+        margin-bottom: rem(10px);
     }
 }
