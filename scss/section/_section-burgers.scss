@@ -1,0 +1,149 @@
+.section-burgers {
+	background-image: linear-gradient(#f9b43b 0%, #eb8c38 50%, #f9b43b 100%);
+}
+
+.burgers__container{
+	flex-direction: row;
+	margin-top: rem(140px);
+	max-width: initial;
+}
+
+.arrow-block{
+	position: relative;
+	width: 5%;
+
+}
+
+.arrow{
+	@extend .page-down;
+	position: absolute;
+	
+	&-prev{
+		transform: rotate(90deg);
+	}
+
+	&-next{
+		transform: rotate(-90deg);
+		margin-right: rem(-30px);
+	}
+}
+
+.burgers__content{
+	display: flex;
+}
+
+.burgers__col{
+	flex: 1;
+	margin-right: rem(30px);
+	position: relative;
+
+	&:last-child{
+		margin-right: 0;
+	}
+}
+
+.burgers__img{
+	width: 100%;
+}
+
+.burgers__title{
+	@extend .main-content__text_one;
+	color: #fff;
+	width: 60%;
+	text-align: left;
+	line-height: rem(65px);
+}
+
+.burgers__descrip{
+	color: #fff;
+	line-height: rem(26px);
+	width: 80%;
+	margin-top: rem(50px);
+	margin-bottom: rem(40px);
+}
+
+
+.burgers__order{
+	display: flex;
+	align-items: flex-end;
+}
+.burgers__price{
+	display: flex;
+	align-items: baseline;
+	@extend .main-content__text_one;
+	color: $orange;
+	margin-right: rem(30px);
+
+	&-text{
+		font-size: rem(24px);
+	}
+}
+
+.burgers__compos{
+	position: absolute;
+	top: rem(-60px);
+	background-color: $orange;
+	border-radius: rem(5px);
+	width: rem(90px);
+	height: rem(93px);
+}
+.burgers__compos{
+	
+	&-img{
+		width: rem(60px);
+	    height: rem(63px);
+	    position: absolute;
+	    left: 50%;
+	    transform: translateX(-50%);
+	    top: 5%;
+	}
+
+	&-text{
+		text-align: center;
+		color: #fff;
+		font-family: 'gagalinregular';
+		font-size: rem(14px);
+		position: absolute;
+	    left: 50%;
+	    transform: translateX(-50%);
+	    top: 75%;
+	}
+}
+
+.burgers__energy{
+	position: absolute;
+	bottom: rem(70px);
+
+	&-img{
+		width: rem(60px);
+	    height: rem(63px);
+	    position: absolute;
+	    left: 50%;
+	    transform: translateX(-50%);
+	    
+	}
+
+	&-number{
+		text-align: center;
+		color: #fff;
+		font-family: 'gagalinregular';
+		font-size: rem(20px);
+		position: absolute;
+		 left: 50%;
+	    transform: translateX(-50%);
+	    top: 75%;
+	}
+
+	&-text{
+		text-align: center;
+		color: #fff;
+		font-family: 'gagalinregular';
+		font-size: rem(20px);
+		position: absolute;
+		left: 50%;
+	    transform: translateX(-50%);
+	    top: rem(50px);
+	}
+
+}
+

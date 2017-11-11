@@ -1,0 +1,12 @@
+.section-burgers {
+  background-image: linear-gradient(#f9b43b 0%, #eb8c38 50%, #f9b43b 100%); }
+
+.burgers__container {
+  flex-direction: row; }
+
+.arrow {
+  width: rem(24px);
+  height: rem(24px); }
+
+.burgers__content {
+  display: flex; }
