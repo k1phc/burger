@@ -113,6 +113,12 @@ ul {
   @media screen and (max-width: 480px) {
     .btn__order {
       margin-left: auto; } }
+  @media screen and (max-width: 768px) {
+    .btn__order-burgers {
+      margin: 0; } }
+  @media screen and (max-width: 480px) {
+    .btn__order-burgers {
+      margin: 0; } }
 
 .hamb-menu {
   vertical-align: middle;
@@ -553,10 +559,6 @@ ul {
       .arrow-next {
         right: 1.25rem; } }
 
-@media screen and (max-width: 768px) {
-  .btn__order-burgers {
-    margin: 0; } }
-
 .burgers__list {
   width: 90%; }
 
@@ -736,7 +738,7 @@ ul {
   @media screen and (max-width: 480px) {
     .burgers__energy {
       top: -5rem;
-      right: -18.75rem; } }
+      right: -15.625rem; } }
   .burgers__energy-img {
     width: 3.75rem;
     height: 3.9375rem;

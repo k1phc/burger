@@ -40,11 +40,7 @@
 	}
 }
 
-.btn__order-burgers{
-	@include tablets{
-		margin: 0;
-	}
-}
+
 
 .burgers__list{
 	width: 90%;
@@ -230,7 +226,7 @@
 
 	 @include mobile{
 	 	top: rem(-80px);
-	 	right: rem(-300px);
+	 	right: rem(-250px);
 	 }
 
 	&-img{

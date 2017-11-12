@@ -28,4 +28,16 @@
 	  	margin-left: auto;
 	  }
 
+
+	&-burgers{
+	@include tablets{
+		margin: 0;
+	}
+
+	@include mobile{
+		margin: 0;
+	}
 }
+
+}
+
