@@ -553,6 +553,10 @@ ul {
       .arrow-next {
         right: 1.25rem; } }
 
+@media screen and (max-width: 768px) {
+  .btn__order-burgers {
+    margin: 0; } }
+
 .burgers__list {
   width: 90%; }
 

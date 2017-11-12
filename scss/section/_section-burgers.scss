@@ -40,6 +40,12 @@
 	}
 }
 
+.btn__order-burgers{
+	@include tablets{
+		margin: 0;
+	}
+}
+
 .burgers__list{
 	width: 90%;
 }
