@@ -42,8 +42,31 @@
                             </ul>
                         </nav>
                         <button class="btn__order">Заказать</button>
-                        <a class="hamb-menu" href="">
+                        <a class="hamb-menu" href="#" id="menuOpen">
                             <div class="hamb-menu__bars"></div>
+                                <ul class="hamb-menu__list">
+                                  <li class="hamb-menu__item">
+                                    <a href="#" class="hamb-menu__link">Почему мы</a>
+                                  </li>
+                                  <li class="hamb-menu__item">
+                                    <a href="#" class="hamb-menu__link">Меню</a>
+                                  </li>
+                                    <li class="hamb-menu__item">
+                                    <a href="#" class="hamb-menu__link">Советы</a>
+                                  </li>
+                                  <li class="hamb-menu__item">
+                                    <a href="#" class="hamb-menu__link">Кто мы</a>
+                                  </li>
+                                  <li class="hamb-menu__item">
+                                    <a href="#" class="hamb-menu__link">Свяжитесь с нами</a>
+                                  </li>
+                                  <li class="hamb-menu__item">
+                                    <a href="#" class="hamb-menu__link">Контакты</a>
+                                  </li>
+                                 <a href="#" class="hamb-menu__close" id="menuClose">
+                                    <div class="hamb-menu__close-bars"></div>
+                                 </a>
+                                </ul> 
                         </a>
                     </header>
                     <div class="main-content">
@@ -97,7 +120,8 @@
                     <div class="arrow-block">
                         <button class="arrow arrow-prev"></button>
                     </div>
-                    <div class="burgers__content">
+                    <ul class="burgers__list">
+                     <li class="burgers__content">
                         <div class="burgers__col">
                             <img src="img/dark-burger.png" class="burgers__img">
                             <div class="burgers__compos">
@@ -105,6 +129,50 @@
                                     <use xlink:href="img/sprite/sprite.svg#burger"></use>
                                 </svg>
                                 <span class="burgers__compos-text">состав</span>
+                                <ul class="compos__list">
+                                    <li class="compos__item">
+                                         <svg class="compos-item-svg" fill="#e25028">
+                                            <use xlink:href="img/sprite/sprite.svg#beef"></use>
+                                        </svg>
+                                        <div class="compos__item-title">Говядина</div>
+                                        <div class="compos__item-weight">300г</div>
+                                    </li>
+                                    <li class="compos__item">
+                                         <svg class="compos-item-svg" fill="#f8b43a">
+                                            <use xlink:href="img/sprite/sprite.svg#buns"></use>
+                                        </svg>
+                                       <div class="compos__item-title">Булочки</div>
+                                       <div class="compos__item-weight">100г</div>
+                                    </li>
+                                    <li class="compos__item">
+                                         <svg class="compos-item-svg" fill="#8ac03e">
+                                            <use xlink:href="img/sprite/sprite.svg#salad"></use>
+                                        </svg>
+                                       <div class="compos__item-title">Зелень</div>
+                                       <div class="compos__item-weight">70г</div>
+                                    </li>
+                                    <li class="compos__item">
+                                         <svg class="compos-item-svg" fill="#e25028">
+                                            <use xlink:href="img/sprite/sprite.svg#sauce"></use>
+                                        </svg>
+                                       <div class="compos__item-title">Соус</div>
+                                       <div class="compos__item-weight">150г</div>
+                                    </li>
+                                    <li class="compos__item">
+                                         <svg class="compos-item-svg" fill="#8ac03e">
+                                            <use xlink:href="img/sprite/sprite.svg#cucumber"></use>
+                                        </svg>
+                                       <div class="compos__item-title">Овощи</div>
+                                       <div class="compos__item-weight">200г</div>
+                                    </li>
+                                    <li class="compos__item">
+                                        <svg class="compos-item-svg" fill="#f8b43a">
+                                            <use xlink:href="img/sprite/sprite.svg#cheese"></use>
+                                        </svg>
+                                       <div class="compos__item-title">Сыр</div>
+                                       <div class="compos__item-weight">80г</div>
+                                    </li>
+                                </ul>
                             </div>
                             <div class="burgers__energy">
                                  <svg class="burgers__energy-img">
@@ -127,7 +195,8 @@
                                 <button class="btn__order">Заказать</button>
                             </div>
                         </div>
-                    </div>
+                     </li>
+                    </ul>
                     <div class="arrow-block">
                         <button class="arrow arrow-next"></button>
                     </div>

@@ -20,11 +20,12 @@
 	  	       cursor: pointer;
 	  }
 
+	  @include tablets{
+	  	margin-left: auto;
+	  }
 
-	  // @include tablets{
-	  // 	font-size: rem(18px);
-	  // 	padding: rem(25px) rem(30px);
-	  // }
+	  @include mobile{
+	  	margin-left: auto;
+	  }
 
-	
 }
