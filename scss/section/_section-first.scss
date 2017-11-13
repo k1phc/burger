@@ -84,7 +84,6 @@
 
 	  &__img{
 	  	flex-basis: 50%;
-	  	margin-right: rem(20px);
 
 	  	  @include tablets{
 	  	  	flex-basis: 100%;
@@ -92,11 +91,14 @@
 
 	  	  @include mobile{
 	  	  	text-align: center;
-	  	     margin-bottom: rem(20px);
+	  	    margin-bottom: rem(20px);
 	  	  	flex-basis: initial;
 	  	  }
 
 	  	  &_full{ 
+
+	  	  	width: 100%;
+
 	  	  	@include mobile{
 	  	  	width: 70%;
 	  	  }
@@ -106,7 +108,7 @@
 
 	  &__text{
 	  	margin-top: rem(90px);
-	  	margin-left: rem(100px);
+	  	margin-left: rem(10px);
 	  	flex-basis: 50%;
 
 

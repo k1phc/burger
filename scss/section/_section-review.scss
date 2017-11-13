@@ -47,6 +47,10 @@
     transition: 0.4s;
      opacity: 0; 
 
+     @include mobile{
+        padding: rem(30px) 0;
+     }
+
      &-name{
      	font-family: 'gagalinregular';
      	font-size: rem(14px);
@@ -60,7 +64,7 @@
         }
 
         @include mobile{
-            font-size: rem(32px);
+            font-size: rem(26px);
         }
      }
 
@@ -84,8 +88,7 @@
      }
 
      &-link{
-     	width: rem(110px);
-     	height: rem(36px);
+     	border: none;
      	background-color: #2f3234;
      	border-radius: rem(6px);
      	color: #fff;
@@ -109,7 +112,6 @@
 
      &-link:hover{
      	background-color: darken(#2f3234,10%);
-        height: 100%;
      }
 }
 

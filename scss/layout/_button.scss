@@ -1,6 +1,4 @@
 .btn__order{
-		width: rem(98px);
-	    height: rem(35px);
 	    background-color: $orange;
 	    border-radius: rem(5px);
 	    border: none;
@@ -29,7 +27,7 @@
 	  }
 
 
-	&-burgers{
+	&-burgers, &-form{
 	@include tablets{
 		margin: 0;
 	}

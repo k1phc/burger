@@ -156,6 +156,7 @@
 	border-radius: rem(5px);
 	width: rem(90px);
 	height: rem(93px);
+	cursor: pointer;
 
 
 	 @include tablets{
@@ -167,9 +168,7 @@
 	 	top: rem(-80px);
 	 	left: 0;
 	 }
-}
-.burgers__compos{
-	
+
 	&-img{
 		width: rem(60px);
 	    height: rem(63px);
@@ -189,6 +188,7 @@
 	    transform: translateX(-50%);
 	    top: 75%;
 	}
+
 }
 
 .compos__list{
@@ -204,6 +204,10 @@
 	display: none;
 }
 
+.burgers__compos:hover .compos__list{
+	display: block;
+}
+
 .compos__item{
 	display: flex;
 	justify-content: space-around;
@@ -215,6 +219,8 @@
 	width: rem(40px);
 	height: rem(40px);
 }
+
+
 .burgers__energy{
 	position: absolute;
 	left: rem(45px);
@@ -261,4 +267,5 @@
 	}
 
 }
+
 
