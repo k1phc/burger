@@ -78,7 +78,7 @@
 	    }
 
 	     @include mobile{
-	  	 	margin-top: rem(0px);	
+	  	 	margin-top: rem(20px);	
 	  	 }
 
 
@@ -115,7 +115,7 @@
 	  	 @include tablets{
 	  	 	flex-basis: 100%;
 	  	 	text-align: center;
-	  	 	margin-top: rem(50px);
+	  	 	margin-top: rem(20px);
 	  	 	margin-left: 0;
 	  	 }
 
@@ -163,7 +163,7 @@
 
 
 	 @include tablets{
-	 	bottom: rem(-280px);
+	 	bottom: rem(-240px);
 	 }
 
 	 @include mobile{

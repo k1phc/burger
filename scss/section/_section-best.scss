@@ -18,6 +18,12 @@
 	margin-top: rem(82px);
 	margin-bottom: rem(130px);
 
+
+	@include tablets{
+		margin-top: rem(20px);
+		margin-bottom: rem(50px);
+	}
+
 	 @include mobile{
 	 	font-size: rem(44px);
 	 	margin-top: rem(30px);
@@ -84,7 +90,9 @@
 	  	text-align: center;
 
 	  	@include tablets{
-	  		font-size: rem(32px);
+	  		font-size: rem(26px);
+	  		margin-top: rem(100px);
+	  		margin-bottom: rem(20px);
 	  	}
 
 	  	@include mobile{
@@ -98,12 +106,12 @@
 	  &-text{
 	  	font-family: 'ubuntulight';
 	  	font-size: rem(14px);
-	  	line-height: rem(24px);
+	  	line-height: rem(22px);
 	  	text-align: center;
 
 	  	@include tablets{
-	  		font-size: rem(18px);
-	  		line-height: rem(30px);
+	  		font-size: rem(14px);
+	  		line-height: rem(24px);
 	  	}
 
 	    @include mobile{

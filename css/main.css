@@ -85,7 +85,6 @@ ul {
       width: 100%; } }
   @media screen and (max-width: 480px) {
     .container {
-      min-height: 100vh;
       width: 100%; } }
 
 .btn__order {
@@ -131,7 +130,7 @@ ul {
     width: 100%;
     height: 100%;
     background-color: rgba(47, 50, 52, 0.99);
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 2;
@@ -182,11 +181,15 @@ ul {
       -webkit-transform: rotate(45deg) translate(-50%, -50%);
               transform: rotate(45deg) translate(-50%, -50%);
       background: #fff; }
+      @media screen and (max-width: 768px) {
+        .hamb-menu__close-bars:before {
+          top: 9%;
+          right: -45%; } }
       @media screen and (max-width: 480px) {
         .hamb-menu__close-bars:before {
           width: 1.375rem;
-          right: 0.25rem;
-          top: 0.125rem; } }
+          top: 55%;
+          right: -25%; } }
     .hamb-menu__close-bars:after {
       content: "";
       position: absolute;
@@ -198,11 +201,15 @@ ul {
       -webkit-transform: rotate(-45deg) translate(-50%, -50%);
               transform: rotate(-45deg) translate(-50%, -50%);
       background: #fff; }
+      @media screen and (max-width: 768px) {
+        .hamb-menu__close-bars:after {
+          top: -69%;
+          right: -53%; } }
       @media screen and (max-width: 480px) {
         .hamb-menu__close-bars:after {
           width: 1.375rem;
-          right: 0.0625rem;
-          top: -0.8125rem; } }
+          top: 3%;
+          right: -34%; } }
   @media screen and (max-width: 768px) {
     .hamb-menu {
       display: -webkit-box;
@@ -222,6 +229,9 @@ ul {
   top: 0; }
 .hamb-menu__bars:after {
   bottom: 0; }
+
+.fixed-block {
+  overflow: hidden; }
 
 .btn__clear {
   width: 6.125rem;
@@ -344,7 +354,7 @@ ul {
               flex-direction: column; } }
   @media screen and (max-width: 480px) {
     .main-content {
-      margin-top: 0rem; } }
+      margin-top: 1.25rem; } }
   .main-content__img {
     -ms-flex-preferred-size: 50%;
         flex-basis: 50%; }
@@ -373,7 +383,7 @@ ul {
         -ms-flex-preferred-size: 100%;
             flex-basis: 100%;
         text-align: center;
-        margin-top: 3.125rem;
+        margin-top: 1.25rem;
         margin-left: 0; } }
     @media screen and (max-width: 480px) {
       .main-content__text {
@@ -408,7 +418,7 @@ ul {
   cursor: pointer; }
   @media screen and (max-width: 768px) {
     .page-down, .arrow {
-      bottom: -17.5rem; } }
+      bottom: -15rem; } }
   @media screen and (max-width: 480px) {
     .page-down, .arrow {
       bottom: 5rem; } }
@@ -436,6 +446,10 @@ ul {
           align-items: center;
   margin-top: 5.125rem;
   margin-bottom: 8.125rem; }
+  @media screen and (max-width: 768px) {
+    .title__best {
+      margin-top: 1.25rem;
+      margin-bottom: 3.125rem; } }
   @media screen and (max-width: 480px) {
     .title__best {
       font-size: 2.75rem;
@@ -501,7 +515,9 @@ ul {
     text-align: center; }
     @media screen and (max-width: 768px) {
       .best__descrip-title {
-        font-size: 2rem; } }
+        font-size: 1.625rem;
+        margin-top: 6.25rem;
+        margin-bottom: 1.25rem; } }
     @media screen and (max-width: 480px) {
       .best__descrip-title {
         margin-top: 1.875rem;
@@ -511,12 +527,12 @@ ul {
   .best__descrip-text {
     font-family: 'ubuntulight';
     font-size: 0.875rem;
-    line-height: 1.5rem;
+    line-height: 1.375rem;
     text-align: center; }
     @media screen and (max-width: 768px) {
       .best__descrip-text {
-        font-size: 1.125rem;
-        line-height: 1.875rem; } }
+        font-size: 0.875rem;
+        line-height: 1.5rem; } }
     @media screen and (max-width: 480px) {
       .best__descrip-text {
         width: 80%;
@@ -1027,10 +1043,25 @@ ul {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.7);
   color: #fff;
-  padding: 3.125rem 1.6875rem 0rem 1.5rem;
+  padding: 6% 6%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -webkit-transition: 0.4s;
   transition: 0.4s;
   opacity: 0; }
+  @media screen and (max-width: 768px) {
+    .reviwers__info {
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; } }
   @media screen and (max-width: 480px) {
     .reviwers__info {
       padding: 1.875rem 0; } }
@@ -1038,11 +1069,11 @@ ul {
     font-family: 'gagalinregular';
     font-size: 0.875rem;
     text-transform: uppercase;
-    margin-bottom: 2rem; }
+    margin-bottom: 1.25rem; }
     @media screen and (max-width: 768px) {
       .reviwers__info-name {
         text-align: center;
-        margin-bottom: 1.25rem;
+        margin-bottom: 0.625rem;
         font-size: 1.375rem; } }
     @media screen and (max-width: 480px) {
       .reviwers__info-name {
@@ -1051,14 +1082,12 @@ ul {
     font-family: 'ubunturegular';
     font-size: 0.875rem;
     line-height: 1.75rem;
-    margin-top: 1.875rem;
-    margin-bottom: 1.875rem; }
+    margin-bottom: 0.625rem; }
     @media screen and (max-width: 768px) {
       .reviwers__info-text {
-        margin-top: 0.9375rem;
-        margin-bottom: 0.9375rem;
         text-align: center;
-        font-size: 1rem; } }
+        font-size: 0.875rem;
+        line-height: 1.5rem; } }
     @media screen and (max-width: 480px) {
       .reviwers__info-text {
         display: none; } }
@@ -1071,16 +1100,9 @@ ul {
     font-size: 0.8125rem;
     text-transform: uppercase;
     text-decoration: none;
-    padding: 0.625rem 0.75rem 0.625rem;
-    text-align: center;
+    padding: 0.625rem 0.75rem;
     -webkit-transition: 0.4s;
     transition: 0.4s; }
-    @media screen and (max-width: 768px) {
-      .reviwers__info-link {
-        margin-left: 8.125rem; } }
-    @media screen and (max-width: 480px) {
-      .reviwers__info-link {
-        margin-left: 2.8125rem; } }
   .reviwers__info-link:hover {
     background-color: #171819; }
 
