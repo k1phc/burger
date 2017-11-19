@@ -167,7 +167,7 @@
 	 }
 
 	 @include mobile{
-	 	top: rem(-80px);
+	 	top: rem(-10px);
 	 	left: rem(10px);
 	 }
 
@@ -233,8 +233,8 @@
 	 }
 
 	 @include mobile{
-	 	top: rem(-80px);
-	 	right: rem(-250px);
+	 	top: rem(-10px);
+	 	right: rem(-280px);
 	 }
 
 	&-img{

@@ -686,7 +686,7 @@ ul {
       left: 10rem; } }
   @media screen and (max-width: 480px) {
     .burgers__compos {
-      top: -5rem;
+      top: -0.625rem;
       left: 0.625rem; } }
   .burgers__compos-img {
     width: 3.75rem;
@@ -751,8 +751,8 @@ ul {
       right: -15.625rem; } }
   @media screen and (max-width: 480px) {
     .burgers__energy {
-      top: -5rem;
-      right: -15.625rem; } }
+      top: -0.625rem;
+      right: -17.5rem; } }
   .burgers__energy-img {
     width: 3.75rem;
     height: 3.9375rem;

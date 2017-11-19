@@ -76,10 +76,10 @@ $(document).ready(function() {
 	$('#fullpage').fullpage();
 });
 
- let accoMenu = document.querySelector('.menu__accordion'),
-    listMenu = accoMenu.children
+ let menuAcco = document.querySelector('.menu__accordion'),
+    listMenu = menuAcco.children
 
-accoMenu.addEventListener('click', function (event) {
+menuAcco.addEventListener('click', function (event) {
     let target = event.target
     if (!target.classList.contains('menu__item-title')) {
         return
