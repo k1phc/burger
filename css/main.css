@@ -168,7 +168,7 @@ ul {
     height: 1.875rem;
     z-index: 2;
     position: absolute;
-    top: 5%;
+    top: 2.9375rem;
     right: 5%; }
     .hamb-menu__close-bars:before {
       content: "";
@@ -548,8 +548,7 @@ ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  margin-top: 8.75rem;
-  max-width: initial; }
+  margin-top: 8.75rem; }
   @media screen and (max-width: 480px) {
     .burgers__container {
       margin-top: 3.125rem; } }
@@ -558,24 +557,23 @@ ul {
   position: relative;
   width: 5%; }
 
-.arrow {
-  position: absolute; }
-  @media screen and (max-width: 768px) {
-    .arrow {
-      top: 50%; } }
-  .arrow-prev {
-    -webkit-transform: rotate(90deg);
-            transform: rotate(90deg); }
-  .arrow-next {
-    -webkit-transform: rotate(-90deg);
-            transform: rotate(-90deg);
-    margin-right: -1.875rem; }
-    @media screen and (max-width: 480px) {
-      .arrow-next {
-        right: 1.25rem; } }
-
-.burgers__list {
-  width: 90%; }
+@media screen and (max-width: 768px) {
+  .arrow {
+    top: 50%; } }
+.arrow-prev {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  left: -4.375rem; }
+  @media screen and (max-width: 480px) {
+    .arrow-prev {
+      left: 0.625rem; } }
+.arrow-next {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  margin-right: -1.875rem; }
+  @media screen and (max-width: 480px) {
+    .arrow-next {
+      right: 1.25rem; } }
 
 .burgers__content {
   display: -webkit-box;
@@ -602,11 +600,12 @@ ul {
     margin-right: 0; }
   @media screen and (max-width: 768px) {
     .burgers__col {
-      width: 100%;
-      margin: 0; } }
+      margin: 0;
+      padding: 0 1.875rem; } }
 
 .burgers__img {
-  width: 100%; }
+  width: 100%;
+  padding-top: 4.375rem; }
   @media screen and (max-width: 768px) {
     .burgers__img {
       padding: 0 7.5rem; } }
@@ -638,9 +637,6 @@ ul {
     .burgers__descrip {
       width: 95%;
       text-align: center;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
       font-size: 1.25rem;
       line-height: 2rem; } }
   @media screen and (max-width: 480px) {
@@ -678,7 +674,7 @@ ul {
 
 .burgers__compos {
   position: absolute;
-  top: -3.75rem;
+  top: 0;
   background-color: #e45028;
   border-radius: 0.3125rem;
   width: 5.625rem;
@@ -691,7 +687,7 @@ ul {
   @media screen and (max-width: 480px) {
     .burgers__compos {
       top: -5rem;
-      left: 0; } }
+      left: 0.625rem; } }
   .burgers__compos-img {
     width: 3.75rem;
     height: 3.9375rem;
@@ -829,14 +825,18 @@ ul {
         margin-bottom: 3.75rem; } }
 
 .mmbr__item {
-  margin-bottom: 2.8125rem; }
+  margin-bottom: 2.8125rem;
+  cursor: pointer; }
   @media screen and (max-width: 480px) {
     .mmbr__item {
       margin-bottom: 1.875rem; } }
   .mmbr__item_active .mmbr__name {
     color: #f9b43b; }
   .mmbr__item_active .mmbr__desc {
-    height: 100%; }
+    height: 6.875rem; }
+    @media screen and (max-width: 768px) {
+      .mmbr__item_active .mmbr__desc {
+        height: 12.5rem; } }
   .mmbr__item_active .triangle {
     -webkit-transform: rotateX(180deg);
             transform: rotateX(180deg); }
@@ -884,7 +884,9 @@ ul {
       justify-content: space-around;
   color: #fff;
   height: 0;
-  overflow: hidden; }
+  overflow: hidden;
+  -webkit-transition: 0.8s;
+  transition: 0.8s; }
   @media screen and (max-width: 768px) {
     .mmbr__desc {
       -webkit-box-orient: vertical;
@@ -895,8 +897,7 @@ ul {
 .mmbr__img {
   border-radius: 50%;
   width: 6.5rem;
-  -o-object-fit: cover;
-     object-fit: cover; }
+  height: 6.375rem; }
   @media screen and (max-width: 768px) {
     .mmbr__img {
       display: block;
@@ -941,7 +942,7 @@ ul {
       top: 3.75rem;
       left: 1.25rem; } }
 
-.menu__accordeon {
+.menu__accordion {
   position: absolute;
   top: 0;
   right: 0;
@@ -965,9 +966,12 @@ ul {
     width: 33.8125rem;
     overflow: visible;
     padding: 4rem 2.25rem; }
+    @media screen and (max-width: 768px) {
+      .menu__item_active .menu__item-text {
+        width: 35.625rem; } }
     @media screen and (max-width: 480px) {
       .menu__item_active .menu__item-text {
-        width: 12.5rem;
+        width: 9.375rem;
         padding: 0.625rem 0.625rem; } }
   .menu__item-title {
     height: 100%;
@@ -990,7 +994,9 @@ ul {
     font-size: 14px;
     color: #fff;
     text-align: left;
-    line-height: 1.75rem; }
+    line-height: 1.75rem;
+    -webkit-transition: 0.6s;
+    transition: 0.6s; }
 
 .menu-title {
   color: #fff;

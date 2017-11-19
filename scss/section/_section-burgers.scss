@@ -5,7 +5,7 @@
 .burgers__container{
 	flex-direction: row;
 	margin-top: rem(140px);
-	max-width: initial;
+	
 
 	@include mobile{
 		margin-top: rem(50px);
@@ -20,7 +20,7 @@
 
 .arrow{
 	@extend .page-down;
-	position: absolute;
+
 
 	 @include tablets{
 	 	top: 50%;
@@ -28,6 +28,11 @@
 	
 	&-prev{
 		transform: rotate(90deg);
+		left: rem(-70px);
+
+		@include mobile{
+			left: rem(10px);
+		}
 	}
 
 	&-next{
@@ -42,9 +47,6 @@
 
 
 
-.burgers__list{
-	width: 90%;
-}
 
 .burgers__content{
 	display: flex;
@@ -69,13 +71,14 @@
 	}
 
 	@include tablets{
-		width: 100%;
 		margin:0;
+		padding: 0 rem(30px);
 	}
 }
 
 .burgers__img{
 	width: 100%;
+	padding-top: rem(70px);
 
 	@include tablets{
 		padding: 0 rem(120px);
@@ -114,7 +117,6 @@
 	@include tablets{
 		width: 95%;
 		text-align: center;
-		justify-content: center;
 		font-size: rem(20px);
 		line-height: rem(32px);
 	}
@@ -151,7 +153,7 @@
 
 .burgers__compos{
 	position: absolute;
-	top: rem(-60px);
+	top: 0;
 	background-color: $orange;
 	border-radius: rem(5px);
 	width: rem(90px);
@@ -166,7 +168,7 @@
 
 	 @include mobile{
 	 	top: rem(-80px);
-	 	left: 0;
+	 	left: rem(10px);
 	 }
 
 	&-img{

@@ -52,6 +52,7 @@
 
 .mmbr__item{
 	margin-bottom: rem(45px);
+	cursor: pointer;
 
 	@include mobile{
 		margin-bottom: rem(30px);
@@ -62,7 +63,11 @@
 	  }
 
 	   &_active .mmbr__desc{
-	  	height: 100%;
+	  	height: rem(110px);
+
+	  	@include tablets{
+	  		height: rem(200px);
+	  	}
 	  }
 
 	  &_active .triangle{
@@ -108,6 +113,7 @@
 	color: #fff;
 	height: 0;
 	overflow: hidden;
+	transition: 0.8s;
 
 	  @include tablets{
 	  	flex-direction: column;
@@ -117,7 +123,8 @@
 .mmbr__img{
 	border-radius: 50%;
 	width: rem(104px);
-	object-fit: cover;
+	height: rem(102px);
+	
 	  
 	  @include tablets{
 	  	display: block;
