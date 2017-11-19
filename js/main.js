@@ -76,10 +76,10 @@ $(document).ready(function() {
 	$('#fullpage').fullpage();
 });
 
- let accomenu = document.querySelector('.menu__accordion'),
-    listmenu = accomenu.children
+ let accoMenu = document.querySelector('.menu__accordion'),
+    listMenu = accoMenu.children
 
-accomenu.addEventListener('click', function (event) {
+accoMenu.addEventListener('click', function (event) {
     let target = event.target
     if (!target.classList.contains('menu__item-title')) {
         return
@@ -91,8 +91,8 @@ accomenu.addEventListener('click', function (event) {
         target.classList.remove('menu__item_active')
         return
     } else {
-        for (var i = 0; i < listmenu.length; i++) {
-            listmenu[i].classList.remove('menu__item_active')
+        for (var i = 0; i < listMenu.length; i++) {
+            listMenu[i].classList.remove('menu__item_active')
             target.classList.add('menu__item_active')
         }
     }
