@@ -121,7 +121,7 @@
             </section>
             <section class="section section-burgers">
                 <div class="container burgers__container">
-                         <div class="arrow-block">
+                         <div class="arrow-block arrow-block_prev">
                            <button class="arrow arrow-prev"></button>
                          </div>
                     <ul class="owl-carousel owl-theme">
@@ -351,7 +351,7 @@
                         </div>
                      </li> 
                     </ul>
-                    <div class="arrow-block">
+                    <div class="arrow-block arrow-block_next">
                         <button class="arrow arrow-next"></button>
                     </div>
                 </div>
@@ -551,7 +551,6 @@
                                     Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
                                 </p>
                                 <button class="reviwers__info-link">Подробнее</button>
-                               <!--  <a href="#" class="reviwers__info-link">Подробнее</a> -->
                             </div>
                         </li>
                     </ul>
@@ -560,41 +559,41 @@
             <section class="section section-form">
                 <div class="container form__container">
                     <h2 class="section__title">закажите доставку</h2>
-                    <form class="form">
+                    <form class="form" action="mail.php" method="post">
                         <div class="form__content">
                             <div class="form__col">
                                 <div class="form__row">
                                     <label class="form__label">
                                         <div class="form__title">Имя</div>
-                                        <input type="text" name="" class="form__input">
+                                        <input type="text"  name="user-name" class="form__input">
                                     </label>
                                     <label class="form__label">
                                         <div class="form__title">Телефон</div>
-                                        <input type="text" name="" class="form__input">
+                                        <input type="text" name="user-phone" class="form__input">
                                     </label>
                                 </div>
                                 <div class="form__row">
                                     <label class="form__label">
                                         <div class="form__title">Улица</div>
-                                        <input type="text" name="" class="form__input">
+                                        <input type="text" name="street" class="form__input">
                                     </label>
                                 </div>
                                 <div class="form__row">
                                     <label class="form__label">
                                         <div class="form__title">Дом</div>
-                                        <input type="text" name="" class="form__input">
+                                        <input type="text" name="house" class="form__input">
                                     </label>
                                     <label class="form__label">
                                         <div class="form__title">Корпус</div>
-                                        <input type="text" name="" class="form__input">
+                                        <input type="text" name="block" class="form__input">
                                     </label>
                                     <label class="form__label">
                                         <div class="form__title">Квартира</div>
-                                        <input type="text" name="" class="form__input">
+                                        <input type="text" name="flat" class="form__input">
                                     </label>
                                     <label class="form__label">
                                         <div class="form__title">Этаж</div>
-                                        <input type="text" name="" class="form__input">
+                                        <input type="text" name="stage" class="form__input">
                                     </label>
                                 </div>
                             </div>
@@ -607,19 +606,19 @@
                                 </div>
                                 <div class="form__row payment__row">
                                     <label class="form__label form__label_radio">
-                                        <input type="radio" name="payment" class="form__input form__radio">
+                                        <input type="radio" name="payment" class="form__input form__radio" id="cash">
                                         <span class="form__radio_circle"></span>
                                         <div class="form__title">Потребуется сдача</div>
                                     </label>
                                     <label class="form__label form__label_radio">
-                                        <input type="radio" name="payment" class="form__input form__radio">
+                                        <input type="radio" name="payment" class="form__input form__radio" id="card">
                                         <span class="form__radio_circle"></span>
                                         <div class="form__title">Оплата по карте</div>
                                     </label>
                                 </div>
                                 <div class="form__row disturb">
                                     <label class="form__label form__label_checkbox">
-                                        <input type="checkbox" name="" class="form__input form__check">
+                                        <input type="checkbox" name="checkbox" class="form__input form__check" id="noCall">
                                         <span class="form__check_square"></span>
                                         <div class="form__title"> Не перезванивать</div>
                                     </label>
@@ -633,7 +632,8 @@
                     </form>
                 </div>
             </section>
-            <section class="section section-map">
+            <section class="section">
+                <div id="map" class="map" style="width: 100%; height: 940px"></div>
                 <footer class="footer">
                     <div class="footer__item">
                         <div class="contact">
@@ -712,6 +712,7 @@
             </div>
         </div>
     </div>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
     <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="js/owl.carousel.min.js"></script>
     <script type="text/javascript" src="js/jquery.fullpage.min.js"></script>

@@ -141,5 +141,7 @@
 }
 
 .fixed-block{
-  overflow: hidden;
+  // overflow: hidden;
+  position: fixed;
+  width: 100%;
 }

@@ -56,44 +56,77 @@ let teamAcco = document.getElementsByClassName('mmbr__item');
 
  //menu acco
 
-// let menuAcco = document.getElementsByClassName('menu__item');
+let menuAcco = document.getElementsByClassName('menu__item');
 
-//     for (let i = 0; i < menuAcco.length; i++) {
-//     menuAcco[i].addEventListener("click", function () {
-//         if (!(this.classList.contains('menu__item_active'))) {
-//             for (let i = 0; i < menuAcco.length; i++) {
-//                 menuAcco[i].classList.remove("menu__item_active");
-//             }
-//             this.classList.add("menu__item_active")
-//         }
-//         else {
-//             this.classList.remove("menu__item_active")
-//         }
-//     })
-// }
+    for (let i = 0; i < menuAcco.length; i++) {
+    menuAcco[i].addEventListener("click", function () {
+        if (!(this.classList.contains('menu__item_active'))) {
+            for (let i = 0; i < menuAcco.length; i++) {
+                menuAcco[i].classList.remove("menu__item_active");
+            }
+            this.classList.add("menu__item_active")
+        }
+        else {
+            this.classList.remove("menu__item_active")
+        }
+    })
+}
 //one page scroll
 $(document).ready(function() {
 	$('#fullpage').fullpage();
 });
 
- let menuAcco = document.querySelector('.menu__accordion'),
-    listMenu = menuAcco.children
 
-menuAcco.addEventListener('click', function (event) {
-    let target = event.target
-    if (!target.classList.contains('menu__item-title')) {
-        return
-    }
+ ymaps.ready(init);
 
-    event.preventDefault()
-    target = target.parentNode
-    if (target.classList.contains('menu__item_active')) {
-        target.classList.remove('menu__item_active')
-        return
-    } else {
-        for (var i = 0; i < listMenu.length; i++) {
-            listMenu[i].classList.remove('menu__item_active')
-            target.classList.add('menu__item_active')
-        }
-    }
-})
+ var placemarks = [
+     {
+     	latitude: 59.98,
+     	longitude: 30.31,
+     	balloonContent: 'Адрес'
+     },
+     {
+     	latitude: 59.90,
+     	longitude: 30.32,
+     	balloonContent: 'Адрес'
+     },
+     {
+        latitude: 59.95,
+     	longitude: 30.38,
+     	balloonContent: 'Адрес'
+     },
+      {
+        latitude: 59.92,
+     	longitude: 30.49,
+     	balloonContent: 'Адрес'
+     }
+ ];
+ function init() {
+ 	   var map = new ymaps.Map('map', {
+ 	   	          center: [59.94, 30.32],
+ 	   	          zoom: 12,
+ 	   	          controls: ['zoomControl'],
+ 	   	          behaviors: ['drag']
+ 	   });
+
+ 	   placemarks.forEach(function(obj) {
+             var placemark = new ymaps.Placemark([obj.latitude, obj.longitude], {
+ 	   	         balloonContent: obj.balloonContent
+       },
+        {
+       	    iconLayout: 'default#image',
+       	    iconImageHref: 'icons/map-marker.svg',
+       	    iconImageSize: [46, 57],
+       	    iconImageOffset: [-23, -20]
+ 	});
+              map.geoObjects.add(placemark);
+  });
+}          
+
+ 	  
+      
+
+ 	   // });
+
+ 	  
+ 

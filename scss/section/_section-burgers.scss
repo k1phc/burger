@@ -4,7 +4,7 @@
 
 .burgers__container{
 	flex-direction: row;
-	margin-top: rem(140px);
+	margin-top: rem(90px);
 	
 
 	@include mobile{
@@ -13,8 +13,16 @@
 }
 
 .arrow-block{
-	position: relative;
-	width: 5%;
+	position: absolute;
+	min-width: 5rem;
+
+	&_prev{
+		left: rem(10px);
+	}
+
+	&_next{
+		right: rem(-70px);
+	}
 
 }
 

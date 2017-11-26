@@ -231,7 +231,8 @@ ul {
   bottom: 0; }
 
 .fixed-block {
-  overflow: hidden; }
+  position: fixed;
+  width: 100%; }
 
 .btn__clear {
   width: 6.125rem;
@@ -548,14 +549,18 @@ ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  margin-top: 8.75rem; }
+  margin-top: 5.625rem; }
   @media screen and (max-width: 480px) {
     .burgers__container {
       margin-top: 3.125rem; } }
 
 .arrow-block {
-  position: relative;
-  width: 5%; }
+  position: absolute;
+  min-width: 5rem; }
+  .arrow-block_prev {
+    left: 0.625rem; }
+  .arrow-block_next {
+    right: -4.375rem; }
 
 @media screen and (max-width: 768px) {
   .arrow {
