@@ -22,7 +22,7 @@ if((isset($_POST['name'])&&$_POST['name']!="")&&(isset($_POST['tel'])&&$_POST['t
                     </body>
                 </html>'; 
         $headers  = "Content-type: text/html; charset=utf-8 \r\n"; 
-        $headers .= "From: Отправитель <sweettester@yandex.ru>\r\n"; 
+        $headers .= "From: Отправитель \r\n"; 
         mail($to, $subject, $message, $headers); 
         echo 'Приветствуем, '.$_POST['name'].'! Ваша заявка принята. Менеджер свяжется с вами в ближайшее время: ';
 }
