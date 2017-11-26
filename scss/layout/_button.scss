@@ -16,8 +16,9 @@
 	  	     &:hover{
 	  	       background-color: darken($orange,10%);
 	  	       cursor: pointer;
-	  }
+	          }
 
+	
 	  @include tablets{
 	  	margin-left: auto;
 	  }
@@ -37,5 +38,12 @@
 	}
 }
 
+
+
+.btn__link {
+
+	color: #fff;
+	text-decoration: none;
 }
 
+}

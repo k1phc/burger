@@ -22,6 +22,10 @@
 
 	&_next{
 		right: rem(-70px);
+
+		@include mobile{
+			right: rem(-5px);
+		}
 	}
 
 }

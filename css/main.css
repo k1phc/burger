@@ -116,6 +116,9 @@ ul {
   @media screen and (max-width: 480px) {
     .btn__order-burgers, .btn__order-form {
       margin: 0; } }
+  .btn__order .btn__link {
+    color: #fff;
+    text-decoration: none; }
 
 .hamb-menu {
   vertical-align: middle;
@@ -230,10 +233,6 @@ ul {
 .hamb-menu__bars:after {
   bottom: 0; }
 
-.fixed-block {
-  position: fixed;
-  width: 100%; }
-
 .btn__clear {
   width: 6.125rem;
   height: 2.1875rem;
@@ -261,22 +260,53 @@ ul {
   right: 3.4375rem; }
   .switcher__list {
     list-style: none; }
-  .switcher__item {
-    width: 0.375rem;
-    height: 0.375rem;
-    background-color: #fff;
-    border-radius: 50%;
-    margin-bottom: 0.9375rem;
-    position: relative; }
+  @media screen and (max-width: 768px) {
+    .switcher {
+      display: none; } }
+  @media screen and (max-width: 480px) {
+    .switcher {
+      display: none; } }
 
-.switcher__link_active {
+.switcher__link div {
+  margin-right: 0.3125rem;
+  margin-bottom: 15px;
+  border: 0.25rem solid #fff;
+  content: "";
+  border-radius: 50%;
+  position: relative; }
+
+.switcher__link div:before {
+  position: absolute;
+  content: "";
+  border-radius: 50%;
+  width: 1px;
+  height: 1px;
+  background: transparent;
+  border: 1px solid #fff;
+  left: -1px;
+  top: -1px;
+  cursor: pointer;
+  -webkit-transition: .3s;
+  transition: .3s; }
+
+.switcher__link div:hover:before {
   width: 1rem;
   height: 1rem;
+  border: 0.125rem solid #fff;
+  left: -0.625rem;
+  top: -0.625rem; }
+
+.switcher__item.active div:before {
   position: absolute;
-  top: -0.3125rem;
-  left: -0.3125rem;
-  border: 0.0625rem solid #fff;
-  border-radius: 50%; }
+  content: "";
+  border-radius: 50%;
+  width: 1rem;
+  height: 1rem;
+  background: transparent;
+  border: 0.125rem solid #fff;
+  left: -0.625rem;
+  top: -0.625rem;
+  cursor: pointer; }
 
 .section-first {
   background: url("../img/bg.png") center center no-repeat;
@@ -561,6 +591,9 @@ ul {
     left: 0.625rem; }
   .arrow-block_next {
     right: -4.375rem; }
+    @media screen and (max-width: 480px) {
+      .arrow-block_next {
+        right: -0.3125rem; } }
 
 @media screen and (max-width: 768px) {
   .arrow {

@@ -17,7 +17,7 @@
 <body>
     <div class="wrapper">
         <div class="content" id="fullpage">
-            <section class="section section-first">
+            <section class="section section-first" data-anchor="first-section">
                 <div class="container">
                     <header class="header">
                         <div class="header__logo">
@@ -26,26 +26,26 @@
                         <nav class="nav">
                             <ul class="nav__list">
                                 <li class="nav__item">
-                                    <a href="#" class="nav__link">о нас</a>
+                                    <a href="#best" class="nav__link">о нас</a>
                                 </li>
                                 <li class="nav__item">
-                                    <a href="#" class="nav__link">бургеры</a>
+                                    <a href="#burgers" class="nav__link">бургеры</a>
                                 </li>
                                 <li class="nav__item">
-                                    <a href="#" class="nav__link">команда</a>
+                                    <a href="#team" class="nav__link">команда</a>
                                 </li>
                                 <li class="nav__item">
-                                    <a href="#" class="nav__link">меню</a>
+                                    <a href="#menu" class="nav__link">меню</a>
                                 </li>
                                 <li class="nav__item">
-                                    <a href="#" class="nav__link">отзывы</a>
+                                    <a href="#review" class="nav__link">отзывы</a>
                                 </li>
                                 <li class="nav__item">
-                                    <a href="#" class="nav__link">контакты</a>
+                                    <a href="#map" class="nav__link">контакты</a>
                                 </li>
                             </ul>
                         </nav>
-                        <button class="btn__order">Заказать</button>
+                        <button class="btn__order"><a href="#form" class="btn__link">Заказать</a></button>
                         <a class="hamb-menu" href="#" id="menuOpen">
                             <div class="hamb-menu__bars .hamb-menu__bars_active"></div>
                                 <ul class="hamb-menu__list">
@@ -85,10 +85,10 @@
                             </h2>
                         </div>
                     </div>
-                    <button class="page-down"></button>
+                    <a href="#best" class="page-down"></a>
                 </div>
             </section>
-            <section class="section section-best">
+            <section class="section section-best" data-anchor="best">
                 <div class="container">
                     <h2 class="title__best">мы лучшие</h2>
                     <ul class="best__list">
@@ -119,7 +119,7 @@
                     </ul>
                 </div>
             </section>
-            <section class="section section-burgers">
+            <section class="section section-burgers" data-anchor="burgers">
                 <div class="container burgers__container">
                          <div class="arrow-block arrow-block_prev">
                            <button class="arrow arrow-prev"></button>
@@ -356,7 +356,7 @@
                     </div>
                 </div>
             </section>
-            <section class="section section-team">
+            <section class="section section-team" data-anchor="team">
                 <div class="team">
                     <div class="team__mmbrs">
                         <h2 class="team__title">команда</h2>
@@ -425,7 +425,7 @@
                     </div>
                 </div>
             </section>
-            <section class="section section-menu">
+            <section class="section section-menu" data-anchor="menu">
                 <h2 class="menu__title">меню</h2>
                 <ul class="menu__accordion">
                     <li class="menu__item">
@@ -454,7 +454,7 @@
                     </li>
                 </ul>
             </section>
-            <section class="section section-review">
+            <section class="section section-review" data-anchor="review">
                 <div class="reviewers">
                     <ul class="reviewers__list">
                         <li class="reviewers__item">
@@ -556,7 +556,7 @@
                     </ul>
                 </div>
             </section>
-            <section class="section section-form">
+            <section class="section section-form" data-anchor="form">
                 <div class="container form__container">
                     <h2 class="section__title">закажите доставку</h2>
                     <form class="form" action="mail.php" method="post">
@@ -632,7 +632,7 @@
                     </form>
                 </div>
             </section>
-            <section class="section">
+            <section class="section" data-anchor="map">
                 <div id="map" class="map" style="width: 100%; height: 940px"></div>
                 <footer class="footer">
                     <div class="footer__item">
@@ -682,36 +682,36 @@
                     </div>
                 </footer>
             </section>
-            <div class="switcher">
-                <ul class="switcher__list">
-                    <li class="switcher__item">
-                        <a href="#" class="switcher__link switcher__link_active"></a>
+        </div>
+    </div>
+     <div class="switcher">
+                <ul class="switcher__list" id="myMenu">
+                    <li class="switcher__item active" data-menuanchor="first-section">
+                        <a href="#first-section" class="switcher__link"><div></div></a>
                     </li>
-                    <li class="switcher__item">
-                        <a href="#" class="switcher__link"></a>
+                    <li class="switcher__item" data-menuanchor="best">
+                        <a href="#best" class="switcher__link"><div></div></a>
                     </li>
-                    <li class="switcher__item">
-                        <a href="#" class="switcher__link"></a>
+                    <li class="switcher__item" data-menuanchor="burgers">
+                        <a href="#burgers" class="switcher__link"><div></div></a>
                     </li>
-                    <li class="switcher__item">
-                        <a href="#" class="switcher__link"></a>
+                    <li class="switcher__item" data-menuanchor="team">
+                        <a href="#team" class="switcher__link"><div></div></a>
                     </li>
-                    <li class="switcher__item">
-                        <a href="#" class="switcher__link"></a>
+                    <li class="switcher__item" data-menuanchor="menu"> 
+                        <a href="#menu" class="switcher__link"><div></div></a>
                     </li>
-                    <li class="switcher__item">
-                        <a href="#" class="switcher__link"></a>
+                    <li class="switcher__item" data-menuanchor="review">
+                        <a href="#review" class="switcher__link"><div></div></a>
                     </li>
-                    <li class="switcher__item">
-                        <a href="#" class="switcher__link"></a>
+                    <li class="switcher__item" data-menuanchor="form">
+                        <a href="#form" class="switcher__link"><div></div></a>
                     </li>
-                    <li class="switcher__item">
-                        <a href="#" class="switcher__link"></a>
+                    <li class="switcher__item" data-menuanchor="map">
+                        <a href="#map" class="switcher__link"><div></div></a>
                     </li>
                 </ul>
             </div>
-        </div>
-    </div>
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
     <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="js/owl.carousel.min.js"></script>
