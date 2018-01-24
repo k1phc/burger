@@ -36,7 +36,7 @@
     $headers = "From: Администратор сайта <admin@loftschool.com>\r\n".
         "MIME-Version: 1.0" . "\r\n" .
         "Content-type: text/html; charset=UTF-8" . "\r\n";
-    $mail = mail('dimaanisov24@gmail.com', 'Заказ', $mail_message, $headers);
+    $mail = mail('abigor_89@mail.ru', 'Заказ', $mail_message, $headers);
     $data = [];
     if ($mail){
         $data['status'] = "OK";
