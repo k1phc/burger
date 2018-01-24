@@ -74,7 +74,7 @@ let menuAcco = document.getElementsByClassName('menu__item');
 //one page scroll
 $(document).ready(function() {
 	$('#fullpage').fullpage({
-        //   anchors:['first-section', 'best', 'burgers', 'team', 'menu', 'review', 'form', 'map'],
+          anchors:['first-section', 'best', 'burgers', 'team', 'menu', 'review', 'form', 'section-map'],
           menu: '#myMenu'
   });
 });
